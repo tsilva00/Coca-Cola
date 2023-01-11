@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="/images/logo.png" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Taste the Feeling</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, repellendus. Ut pariatur quisquam
+                    inventore nisi assumenda qui quae et illo ab maxime voluptatibus architecto sequi, dolores quasi
+                    earum aliquid? Fugiat.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="www.google.com"><img src="/images/cocacola1.png"></a></div>
+                        <div class="swiper-slide"><a href="www.google.com"><img src="/images/cocacola2.png"></a></div>
+                        <div class="swiper-slide"><a href="www.google.com"><img src="/images/cocacola3.png"></a></div>
+                        <div class="swiper-slide"><a href="www.google.com"><img src="/images/cocacola4.png"></a></div>
+                        <div class="swiper-slide"><a href="www.google.com"><img src="/images/cocacola5.png"></a></div>
+                        <div class="swiper-slide"><a href="www.google.com"><img src="/images/cocacola6.png"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="/images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="/images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="/images/instagram.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
